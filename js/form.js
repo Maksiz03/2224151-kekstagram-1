@@ -8,8 +8,6 @@ const textDescription = document.querySelector('.text__description');
 const textHashtags = document.querySelector('.text__hashtags');
 const imageUploadForm = document.querySelector('.img-upload__form');
 const imageUploadInpuc = document.querySelector('.img-upload__input');
-// eslint-disable-next-line no-unused-vars
-const imageUploadPreview = imageUploadOverlay.querySelector('.img-upload__preview');
 const photoPreview = imageUploadForm.querySelector('.img-upload__preview img');
 const photoEffectsPreview = imageUploadForm.querySelectorAll('.effects__preview');
 

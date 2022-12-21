@@ -62,7 +62,7 @@ const addPictureEvent = (picture, data) => {
 };
 
 
-const EscapeKeyDown = (evt) => {
+const escapeKeyDown = (evt) => {
   if(evt.key === 'Escape'){
     bigPicture.classList.add('hidden');
     document.querySelector('body').classList.remove('modal-open');
@@ -72,7 +72,7 @@ const EscapeKeyDown = (evt) => {
 closeButton.addEventListener('click', () => {
   bigPicture.classList.add('hidden');
   document.querySelector('body').classList.remove('modal-open');
-  document.removeEventListener('keydown', EscapeKeyDown);
+  document.removeEventListener('keydown', escapeKeyDown);
 });
-document.addEventListener('keydown', EscapeKeyDown);
+document.addEventListener('keydown', escapeKeyDown);
 export {addPictureEvent};

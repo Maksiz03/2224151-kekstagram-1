@@ -42,9 +42,6 @@ function nextScaleClickHandler() {
   setScaleOnImg();
 }
 
-export function resetScaleModifier() {
-  photoPreview.style.transform = '';
-}
 
 scaleMinusButton.addEventListener('click', prevScaleClickHandler);
 scalePlusButton.addEventListener('click', nextScaleClickHandler);

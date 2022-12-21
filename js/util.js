@@ -5,7 +5,6 @@ const getRandomPositiveInteger = (a, b) => {
   const result = Math.random() * (upper - lower + 1) + lower;
   return Math.floor(result);
 };
-const getRandomArrayElement = (elements) => elements[getRandomPositiveInteger(0, elements.length - 1)];
 const isEscapeKey = (evt) => evt.key === 'Escape';
 const showAlert = (message) => {
   const alertContainer = document.createElement('div');
@@ -31,4 +30,4 @@ function onFail(err) {
   showAlert(`Ошибка загрузки изображений - ${err.status}`);
 }
 
-export {getRandomArrayElement,getRandomPositiveInteger, isEscapeKey,showAlert, onFail };
+export {getRandomPositiveInteger, isEscapeKey,showAlert, onFail };

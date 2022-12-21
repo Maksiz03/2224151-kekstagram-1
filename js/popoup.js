@@ -1,4 +1,4 @@
-import {addPictureEvent} from './bigPicture.js';
+import {addPictureEvent} from './big-picture.js';
 import { activateFilters, filterByComments, filterByDefault, filterByRandom } from './filter.js';
 
 const pictureTemplate = document.querySelector('#picture').content.querySelector('.picture');
